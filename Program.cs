@@ -75,7 +75,7 @@
                 Console.WriteLine("Employee 2 does not exist in list!");
             }
                 
-            Console.WriteLine($"First male in list : {employeeList.First(x=>x.Gender == Gender.Male)}");
+            Console.WriteLine($"First male in list : {employeeList.Find(x=>x.Gender == Gender.Male)}");
 
             foreach (var m in employeeList.FindAll(x => x.Gender == Gender.Male)) //loopa igenom listan vi får tillbaka från FindAll och printa employee
             {
